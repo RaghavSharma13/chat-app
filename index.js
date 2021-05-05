@@ -13,6 +13,7 @@ const {
   getUsersInRoom,
 } = require("./utils/users");
 
+app.use(express.static(path.join(__dirname, 'client/build')));
 const port = process.env.PORT || 4000;
 
 io.on("connection", (socket) => {
