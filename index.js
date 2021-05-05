@@ -1,4 +1,6 @@
-const app = require("express")();
+const express=require('express');
+const path=require('path');
+const app = express();
 const http = require("http").Server(app);
 const io = require("socket.io")(http, {
   cors: {
@@ -12,7 +14,6 @@ const {
   removeUser,
   getUsersInRoom,
 } = require("./utils/users");
-
 app.use(express.static(path.join(__dirname, 'client/build')));
 const port = process.env.PORT || 4000;
 
