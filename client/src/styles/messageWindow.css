@@ -35,3 +35,16 @@
 .message>a{
     color:#0070CC;
 }
+@media only screen and (max-width:600px){
+    .chat-main{
+        grid-template-rows: 1fr 0.1fr;
+        height:85vh;
+        padding: 20px 20px 0;
+        row-gap: 15px;
+    }
+}
+@media only screen and (max-width:330px){
+    .chat-main{
+        padding:10px 10px 0;
+    }
+}

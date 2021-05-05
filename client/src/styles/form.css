@@ -33,3 +33,27 @@
 .location{
     flex:0.2;
 }
+@media only screen and (max-width:400px){
+    .form{
+        display:grid;
+        grid-template-rows:48px 48px;
+        grid-template-columns:0.75fr 0.2fr;
+        row-gap: 10px;
+    }
+    .location{
+        margin-bottom:10px;
+        grid-column:1/3;
+    }
+}
+@media only screen and (max-width:275px){
+    .form{
+        grid-template-rows: 48px 38px 48px;
+        grid-template-columns: 1fr;
+    }
+    .send{
+        grid-row:2;
+    }
+    .location{
+        grid-row:3;
+    }
+}
