@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {useHistory} from 'react-router-dom';
 import UserWindow from './userWindow';
 import MessageWindow from './messageWindow';
