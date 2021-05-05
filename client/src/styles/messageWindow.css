@@ -1,0 +1,37 @@
+.chat-main{
+    background-color:white;
+    display:grid;
+    grid-template-rows:630px 50px;
+    grid-column:3;
+    padding:20px;
+}
+.messageWindow{
+    grid-row:1;
+    margin-bottom:5px;
+    overflow-y:auto;
+    scroll-behavior: smooth;
+}
+.messageWindow::-webkit-scrollbar{
+    background:rgba(119,119,119,0.1);
+    border-radius:10px;
+    width:10px;
+}
+.messageWindow::-webkit-scrollbar-thumb{
+    background:#777;
+    border-radius:10px;
+}
+.message{
+    margin-bottom: 16px;
+}
+.header--name{
+    font-weight:600;
+    font-size:14px;
+    margin-right:8px;
+}
+.header--meta{
+    color:#777;
+    font-size:14px;
+}
+.message>a{
+    color:#0070CC;
+}

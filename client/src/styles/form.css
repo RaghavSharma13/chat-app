@@ -1,0 +1,35 @@
+.form{
+    align-self:center;
+    display:flex;
+    grid-row:2;
+    justify-content:space-between;
+}
+#msgInput{
+    border:1px solid lightgray;
+    border-radius:3px;
+    flex:0.65;
+    outline:none;
+    padding:12px;
+}
+#msgInput:placeholder{
+    color:#777;
+}
+.btn{
+    background-color:#7C5CBF;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    outline:none;
+    padding:8px;
+    transition:background-color 300ms ease;
+}
+.btn:hover{
+    background-color:#6b47b8;
+}
+.send{
+    flex:0.1;
+}
+.location{
+    flex:0.2;
+}

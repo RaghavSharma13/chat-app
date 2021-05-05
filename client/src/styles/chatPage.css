@@ -1,0 +1,5 @@
+.chatPage{
+    background-color:#eeeeee;
+    display:grid;
+    grid-template-columns: 225px 15px 1fr;
+}

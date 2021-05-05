@@ -1,0 +1,32 @@
+.userWindow{
+    align-items:flex-start;
+    background-color:#333744;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    grid-column: 1;
+    height:100vh;
+}
+.room{
+    background-color:#2c2f3a;
+    font-size:22px;
+    font-weight:400;
+    padding:24px;
+    width:100%;
+}
+.listTitle{
+    font-size:18px;
+    font-weight:500;
+    margin-bottom:4px;
+    padding:12px 24px 0 24px;
+    width:100%
+}
+.users{
+    font-weight:300;
+    list-style-type:none;
+    padding:12px 24px 0 24px;
+    width:100%;
+}
+.users>li{
+    margin-bottom:10px;
+}
