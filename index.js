@@ -14,8 +14,16 @@ const {
   removeUser,
   getUsersInRoom,
 } = require("./utils/users");
-app.use(express.static(path.join(__dirname, 'client/build')));
+
 const port = process.env.PORT || 4000;
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+app.get('/chatpage*',(req,res)=>{
+  res.sendFile(path.join(__dirname,'client/build/chatPage.js'),err=>{
+    if(err) res.status(500).send(err);
+  });
+})
+
 
 io.on("connection", (socket) => {
   console.log("New WebSocket Connection");
