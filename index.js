@@ -19,7 +19,7 @@ const port = process.env.PORT || 4000;
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('/chatpage*',(req,res)=>{
-  res.sendFile(path.join(__dirname,'client/build/chatPage.js'),err=>{
+  res.sendFile(path.join(__dirname,'client/build/index.html'),err=>{
     if(err) res.status(500).send(err);
   });
 })
